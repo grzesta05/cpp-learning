@@ -5,7 +5,7 @@ using namespace std;
 class singleton{
 private:
   static singleton* instance;
-  //Tu trzymamy instancję, sprawdzając, czy ona istnieje, będziemy mogli ją przydzielić. Nie możemy dać tutaj "=0", bo musiałaby być const
+  //Tu trzymamy instancję, sprawdzając, czy ona istnieje, będziemy mogli ją przydzielić. Nie możemy dać tutaj "=0", bo musiałaby być const.
 
   Singleton(); //Prywatny konstruktor!!!
 
