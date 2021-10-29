@@ -1,0 +1,4 @@
+Przemek Adamov 6 5 4
+Adam Kubow 2 1 6
+Kuba Arturow 6 4 5
+Artur Przemkow 2 4 1
