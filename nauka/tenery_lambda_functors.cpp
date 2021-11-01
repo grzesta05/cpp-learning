@@ -20,11 +20,12 @@
   };
 
 int main() {
+  std::string name = "Grzegorz";
 
   //Calling a functor
   functor Functor;
-  std::cout<<Functor(name);
-  
+  std::cout<<Functor(name) << std::endl;
+
   //example of lambda usage. Lambda is a derivative of functors - function objects.
   auto lambdaExample = [/*You can place & or = or this to include all the variables and functions*/](/*Arguments*/){/*lambda body here*/} ;
   auto lambda1 = [](int i){return i*i;};
@@ -33,7 +34,6 @@ int main() {
 
   //Trenary expression is a conditional statement with two outcomes
   //For example
-  std::string name = "Grzegorz";
   int o = (name == "Grzegorz" ? 1 : 0);
   std::cout<< o;
 
