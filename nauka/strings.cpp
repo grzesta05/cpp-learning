@@ -1,12 +1,14 @@
 #include <iostream>
 #include <bits/stdc++.h>
 
-using namespace std;
-
 int main(){
-  string str1 = "type";
+  std::string str1 = "type";
   // String functions!
-  bool contain = str1.find("typ") != string::npos; // string find
-  transform(str1.begin(), str1.end(), str1.begin(), ::toupper); // transform to upper
-  string a = str1.substr(1/*beginning*/, 2 /*end*/); // substr
+  bool contain = str1.find("typ") != std::string::npos; // string find
+  std::transform(str1.begin(), str1.end(), str1.begin(), ::toupper); // transform to upper
+  std::transform(str1.begin(), str1.end(), str1.begin(), ::tolower);
+  std::string a = str1.substr(1/*beginning*/, 3 /*end*/); // substr
+  std::reverse(str1.begin(), str1.end());
+  std::cout<< a;
+
 }
