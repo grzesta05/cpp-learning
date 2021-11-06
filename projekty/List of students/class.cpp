@@ -32,10 +32,7 @@ class ClassO {
           while (getline(file1, line))
           {
             // Getting subjects; Issue with getting Subjects - it makes students go blank
-            if(name == "")
-            {
-              getSubjects(Subjects, line);
-            }else{
+
             name = line.substr(0, line.find(" "));
             surname = line.substr(name.length()+1, line.substr(name.length()+1).find(" "));
             string gradesStr = line.substr(line.find(surname) + surname.length()+1);
@@ -47,7 +44,7 @@ class ClassO {
             student St(name, surname, grades);
             Students.push_back(St);
             grades.clear();
-          }}
+          }
         }
       }
 };
