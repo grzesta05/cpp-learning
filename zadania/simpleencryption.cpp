@@ -40,4 +40,8 @@ std::string decrypt(std::string et, int n)
 
 int main(){
 
+  std::string a = ""
+
+  std::string u = encrypt(a,1819);
+  std::cout<<decrypt(u,1819);
 }

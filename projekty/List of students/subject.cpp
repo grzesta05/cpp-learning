@@ -9,7 +9,7 @@ class subject
       string name, teacher;
     public:
 
-      subject(const string& name) :
+      subject(const string& name,const string &teacher) :
         name(name), teacher(teacher) {}
       string getTeacher() { return teacher; }
       void setTeacher(const string &teacher){this->teacher = teacher;}

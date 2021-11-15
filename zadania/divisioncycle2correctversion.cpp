@@ -20,11 +20,10 @@ int findPattern(int n)
 
 int main()
 {
-  int a = 18118;
+  int a = 18188;
   int n = a;
-  while(n>1)
+    while(n>1)
   {
-    std::cout<<n<<std::endl;
     n/=(n%2==0? 2 : 5);
   }
   std::cout<< (n==0? -1 : findPattern(a));

@@ -49,5 +49,5 @@ int findPattern(std::string s)
 int main()
 {
 
-  std::cout<< findPattern(getDecimal(1,7));
+  std::cout<< findPattern(getDecimal(1,));
 }
