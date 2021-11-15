@@ -4,8 +4,7 @@
 
   ostream& operator<<(ostream& stream, ClassO& ClassObj)
   {
-    vector<student> students;
-    students = ClassObj.getStudents();
+    vector<student> students = ClassObj.getStudents();
     for(int i = 0; i < students.size(); i++)
     {
       stream<<students[i].getName()<<endl;

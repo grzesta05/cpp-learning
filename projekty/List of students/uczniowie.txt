@@ -1,5 +1,5 @@
 Franciszek Niwicki 4 2 1
 Jadwiga Choroszy 5 1 2
-Jakub Biela 1 1 2
 Grzegorz Majgier 6 6 6
 Mikolaj Nawrot 6 6 5
+Adam Kowalski 1 2 3
