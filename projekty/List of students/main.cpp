@@ -7,17 +7,34 @@
 
   int main()
   {
-  ClassO klasa1("uczniowie","subjects");
-  cout<<"==Wypisanie KLasy (Przeładowanie operatora)=="<<endl<<klasa1;
-  cout<<endl<<"==Wypisanie listy uczniów wraz z ocenami (Przeładowanie operatora i funkcje klasy Student)=="<<endl;
-  for(int i = 0; i < klasa1.getStudents().size(); i++)
-  {
-  cout<<setprecision(2)<<klasa1.getStudents()[i]<< endl<<" z ocenami o sredniej " << klasa1.getStudents()[i].getAvg()<<endl;
-  }
-  vector<subject> Sub = klasa1.getSubjects();
-    cout<< endl<<"Wypisanie Nauczycieli"<<endl<<"Nauczyciele:"<<endl;
-  for(int i = 0; i < Sub.size(); i++)
-  {
-    cout<<Sub[i].getTeacher()<< " uczy " << Sub[i].getName()<<endl;
-  }
+    ClassO klasa1("uczniowie","subjects");
+    cout<< "Podaj akcję, którą chcesz podjąć." << endl;
+    cout<< "1. Wypisz średnią arytmetyczną ocen ucznia (podaj id ucznia)"<<endl;
+    cout<< "2. Wypisz średnią arytmetyczną ocen klasy"<<endl;
+    cout<< "3. Wypisz listę uczniów"<<endl;
+    cout<< "4. Wypisz oceny ucznia (Podaj id)"<<endl;
+    int n;
+    cin>>n;
+    switch(n)
+    {
+      case 1:
+        cout<< endl<<"Podaj ID"<<endl;
+        int o;
+        cin>>o;
+        cout<<klasa1.getStudents()[o].getName() << " " << klasa1.getStudents()[o].getAvg();
+      break;
+
+      case 2:
+        cout<<setprecision(2)<<"Średnia Klasy " << klasa1.getAvg();
+      break;
+      case 3:
+        cout<< klasa1;
+      break;
+      case 4:
+        cout<< endl<<"Podaj ID"<<endl;
+        int a;
+        cin>>a;
+        cout<<klasa1.getStudents()[a];
+      break;
+    }
   }

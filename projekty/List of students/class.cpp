@@ -31,6 +31,13 @@ class ClassO {
       vector<student> getStudents() { return Students; }
       vector<subject> getSubjects() { return Subjects; }
 
+      double getAvg(){
+        double a;
+        for(int i = 0; i < Students.size(); i++)
+          a+=Students[i].getAvg();
+        return a/Students.size();
+      }
+
       ClassO(std::string filename, std::string subjectsFileName)
       {
         appendSubjects(subjectsFileName);
