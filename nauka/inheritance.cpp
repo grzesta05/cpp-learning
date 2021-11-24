@@ -3,6 +3,10 @@
 
 using namespace std;
 
+class a{
+
+};
+
 int main()
 {
 

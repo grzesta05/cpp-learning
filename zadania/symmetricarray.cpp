@@ -4,7 +4,7 @@ bool checkIfSymmetric(int n[],const int &l)
 {
   if(l % 2 != 0)
     return 0;
-  std::sort(n, n+l);
+  
   for(int i = 0; i < l; i++)
   {
 

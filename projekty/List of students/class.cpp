@@ -32,7 +32,7 @@ class ClassO {
       vector<subject> getSubjects() { return Subjects; }
 
       double getAvg(){
-        double a;
+        double a=0;
         for(int i = 0; i < Students.size(); i++)
           a+=Students[i].getAvg();
         return a/Students.size();

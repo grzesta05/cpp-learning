@@ -36,5 +36,8 @@
         cin>>a;
         cout<<klasa1.getStudents()[a];
       break;
+      default:
+      cout<< "Zły numer polecenia!";
+      break;
     }
   }
