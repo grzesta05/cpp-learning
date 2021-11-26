@@ -14,6 +14,10 @@ public:
     prev1->next = this;
   }
   node(x value) : value(value)  {}
+  void operator=(x value)
+  {
+    this->value = value;
+  }
 };
 
 template<typename x> class NodeList
@@ -22,6 +26,10 @@ private:
   node<x> *head = nullptr;
   node<x> *tail = nullptr;
 public:
+  x& operator[](int i)
+  {
+    return getItem(i)->value;
+  }
   int length = 0;
   node<x> *getHead()
   {
@@ -96,10 +104,12 @@ public:
 int main()
 {
   NodeList<int> list;
-  for(int i = 1; i < 101; i++)
+for(int i = 1; i < 101; i++)
   {
     list.addItem(i);
   }
-  for(int i = 0; i < list.length; i++)
-    std::cout<< list.getItem(i)->value << std::endl;
+  for(int i = 0; i < list.length; i++){
+    list[i] = 1;
+    std::cout<< list[105] << std::endl;
+}
 }
