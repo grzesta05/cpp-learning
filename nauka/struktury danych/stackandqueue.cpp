@@ -52,9 +52,9 @@ public:
 int main()
 {
   Stack<int> stos(20);
-  for(int i = 0; i < 10; i++)
+  for(int i = 0; i < 100; i++)
     stos.push(i);
-  for(int i = 0; i < 10; i++)
+  for(int i = 0; i < 100; i++)
     std::cout<<stos.pop();
 
 
